@@ -1,0 +1,14 @@
+{
+  "appId": "com.eccoroadsafety.app",
+  "appName": "ECCO Road Safety",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true,
+    "allowNavigation": ["*"]
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}

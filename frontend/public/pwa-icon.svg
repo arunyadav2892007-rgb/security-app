@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Rounded Background -->
+  <rect width="512" height="512" rx="128" fill="#0f172a" />
+  
+  <!-- Outer Shield Aura -->
+  <path d="M256 50L90 120v140c0 110 70 200 166 222 96-22 166-112 166-222V120L256 50z" fill="url(#shieldGrad)" />
+  
+  <!-- Inner Shield Trim -->
+  <path d="M256 75L110 137v123c0 98 62 178 146 198 84-20 146-100 146-198V137L256 75z" fill="#000f2b" stroke="#f59e0b" stroke-width="6" />
+
+  <!-- Shield Core -->
+  <path d="M256 95L128 149v111c0 86 54 156 128 174 74-18 128-88 128-174V149L256 95z" fill="#1a6c7a" />
+  
+  <!-- Checkmark -->
+  <path d="M210 270l35 35 75-80" stroke="#fef08a" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Text Label -->
+  <text x="256" y="445" font-family="Montserrat, system-ui, sans-serif" font-weight="900" font-size="34" fill="#ffffff" text-anchor="middle" letter-spacing="4">ECCO SAFETY</text>
+
+  <defs>
+    <linearGradient id="shieldGrad" x1="256" y1="50" x2="256" y2="482" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a6c7a" />
+      <stop offset="1" stop-color="#0f4c5c" />
+    </linearGradient>
+  </defs>
+</svg>
