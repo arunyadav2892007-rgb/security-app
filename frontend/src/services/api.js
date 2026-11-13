@@ -13,7 +13,8 @@ export const getApiBaseUrl = () => {
       return stored || 'http://192.168.1.5:5000/api';
     }
   }
-  return '/api';
+  // Use Vite env var for deployed frontend (Vercel/Netlify), fallback to /api for local dev
+  return import.meta.env.VITE_API_BASE_URL || '/api';
 };
 
 export const setApiBaseUrl = (url) => {
