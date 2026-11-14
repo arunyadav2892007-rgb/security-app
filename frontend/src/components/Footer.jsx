@@ -26,9 +26,9 @@ export default function Footer({ onNavigate }) {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand info */}
-          <div className="space-y-4 md:col-span-1">
+          <div className="space-y-4 lg:col-span-1">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg bg-teal-800 flex items-center justify-center text-white">
                 <ShieldCheck className="w-6 h-6 text-amber-300" />
@@ -98,8 +98,32 @@ export default function Footer({ onNavigate }) {
             </ul>
           </div>
 
-          {/* Contact Details */}
+          {/* Legal */}
           <div>
+            <h5 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
+              Legal
+            </h5>
+            <ul className="space-y-2 text-xs text-slate-400">
+              <li>
+                <button onClick={() => onNavigate('terms')} className="hover:text-white transition">
+                  Terms & Conditions
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('privacy')} className="hover:text-white transition">
+                  Privacy Policy
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('refund')} className="hover:text-white transition">
+                  Refund & Cancellation Policy
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Details */}
+          <div className="lg:col-span-1">
             <h5 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
               Registered Center
             </h5>

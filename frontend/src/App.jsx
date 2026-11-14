@@ -12,6 +12,9 @@ import VerifyCertificate from './components/VerifyCertificate';
 import AdminOverview from './components/AdminOverview';
 import InstallAppBanner from './components/InstallAppBanner';
 import ServerSettingsModal from './components/ServerSettingsModal';
+import TermsConditions from './components/TermsConditions';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import RefundPolicy from './components/RefundPolicy';
 
 export default function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -135,6 +138,10 @@ export default function App() {
             onVerifyCert={handleVerifyCertClick}
           />
         )}
+
+        {currentView === 'terms' && <TermsConditions />}
+        {currentView === 'privacy' && <PrivacyPolicy />}
+        {currentView === 'refund' && <RefundPolicy />}
       </main>
 
       {/* Candidate Registration Modal */}
